@@ -103,7 +103,7 @@ Serves
 ```
 
 The step before the selection looks like: 
-
+```
 Chicago Pizza	cheese	7.75	cheese	7.75
 Chicago Pizza	cheese	7.75	supreme	8.5
 Chicago Pizza	supreme	8.5	cheese	7.75
@@ -119,5 +119,5 @@ Pizza Hut	cheese	9	supreme	12
 Pizza Hut	supreme	12	cheese	9
 Pizza Hut	supreme	12	supreme	12
 Straw Hat	cheese	9.25	cheese	9.25
-
+```
 When the select chooses those where pizza is < pizzaclone, it's comparing the strings and picking one where pizza comes before pizza1 in dictionary order. As you can see, for the ones that only have one pizza type offered, they get excluded because they only have one that's the same. I feel like this works only because there's only 2 pizza types for the ones that offer them all, because if there were 1, 2, and 3 pizza types among those pizzerias all in the set where people over 30 eat them, wouldn't the 2 and 3s both pass through the filter on this query?
